@@ -5,9 +5,10 @@
 print('Введите целое число: ')
 num = int(input())
 print(hex(num))
+numericStr = '0123456789ABCDEF'
 res = ''
 while num > 0:
-    res = str(num % 16) + res
+    res = str(numericStr[num % 16]) + res
     num = num // 16
 print(res)
 
